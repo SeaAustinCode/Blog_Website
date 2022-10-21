@@ -142,6 +142,10 @@ body.light-theme{
 .menu > .list{
     flex-direction: column;
 }
+
+.list-link.current{
+    color: var(--light-color);
+}
 /* Header JavaScript Styles */
 
 /* Search */
