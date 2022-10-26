@@ -174,7 +174,24 @@ body.light-theme{
 }
 
 /* Header JavaScript Styles */
+.header.activated{
+    box-shadow: 0 1px .5rem var(--transparent-light-color);
+    /* background-color: red; used to test if the scroll header function is working. */
+}
 
+.menu.activated{
+    box-shadow: 1px 1px 1rem var(--transparent-light-color);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.menu-toggle-icon.activated .open-menu-icon{
+    display: none;
+}
+
+.menu-toggle-icon.activated .close-menu-icon{
+    display: block;
+}
 /* Search */
 
 /* Form JavaScript styles */
