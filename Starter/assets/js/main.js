@@ -7,7 +7,7 @@ const selectElement = selector => {
 
 // console.log(selectElement('.footer')); // used this to test that the selector and error message are working properly
 
-//Nav styles on scroll
+//Nav styles when scrolling
 const scrollHeader = () => {
     const headerElement = selectElement('#header');
     if (this.scrollY >= 15) {
