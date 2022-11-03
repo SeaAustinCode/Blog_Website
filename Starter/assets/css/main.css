@@ -234,7 +234,7 @@ body.light-theme{
 }
 
 .form-btn{
-    margin-left: -.5rem;
+    margin-left: -.5rem; /* negative margin pushes it slightly to the left */
     border-left: none;
     background-color: var(--secondary-background-color);
     width: 8rem;
