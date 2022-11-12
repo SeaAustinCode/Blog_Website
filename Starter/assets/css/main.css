@@ -106,6 +106,10 @@ body.light-theme{
     display:none;
 }
 
+.section{
+    padding-block: 5rem;
+}
+
 /* Header */
 .header{
     background-color: var(--secondary-background-color);
@@ -296,7 +300,7 @@ body.light-theme{
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
-    padding: 4px;
+    padding: .4rem;
     height: 100%;
 }
 
@@ -323,7 +327,7 @@ body.light-theme{
 
 .fancy-border span{
     position: relative;
-    z-index: 10;
+    z-index: 10; /* this sends the text to the top of the background */
     display: inline-flex;
     background-color: var(--secondary-background-color);
     padding: .6rem 1.5rem;
@@ -339,7 +343,7 @@ body.light-theme{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform .25s;
+    transition: transform .25s; /* this is for the hover effect where we zoom in  */
 }
 
 .article-category{
@@ -355,14 +359,38 @@ body.light-theme{
 }
 
 .article-data-container{
-    width: 100%;
     position: absolute;
+    width: 100%;
     left: 0;
     bottom: 0;
     padding: 2rem 1.5rem;
     background-color: var(--transparent-dark-color);
     z-index: 10;
     transition: background-color .5s;
+}
+
+.article:hover .article-data-container{
+    background-color: var(--hover-dark-color);
+    color: var(--hover-light-color);
+}
+
+.article:hover .article-data-spacer{
+    background-color: var(--hover-light-color);
+}
+
+.article-data{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    font-size: var(--font-size-xsm);
+    margin-bottom: 1rem;
+}
+
+.article-data-spacer{
+    width: .5rem;
+    height: .5rem;
+    background-color: var(--light-color-alt);
+    transform: rotate(45deg); /* this creates the diamond */
 }
 
 /* Featured articles - Sidebar */
