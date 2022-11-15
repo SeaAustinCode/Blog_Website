@@ -393,6 +393,14 @@ body.light-theme{
     transform: rotate(45deg); /* this creates the diamond */
 }
 
+.title{
+    color: var(--light-color);
+}
+
+.article-title{
+    font-size: var(--font-size-md);
+}
+
 /* Featured articles - Sidebar */
 
 /* Quick read */
